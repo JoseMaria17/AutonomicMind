@@ -1,0 +1,4 @@
+function s=su(a,b)
+s=a+b;
+fprintf('la suma da %d\n',s)
+end 
