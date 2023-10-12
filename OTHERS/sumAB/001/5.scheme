@@ -1,0 +1,8 @@
+(define (main)
+    (display "input data:\n")
+    (let ((a (read)) (b (read)))
+      (display "answer:\n")
+      (display (+ a b))
+      (newline)))
+
+(main)
