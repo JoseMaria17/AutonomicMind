@@ -1,0 +1,6 @@
+func aPlusB(input1: Int, input2: Int) -> Int {
+    let x = input1 + input2
+    return x
+}
+
+print(aPlusB(input1: 9487, input2: 4881))
