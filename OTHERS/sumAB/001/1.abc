@@ -1,0 +1,22 @@
+# Adding up two numbers
+
+The input is two numbers on a line. In scheme we can read any number of objects until end-of-file occurs.
+
+``` {.scheme #read-numbers}
+#| Read a series of numbers from input
+ |#
+(define (read-numbers)
+  (do ((x (read) (read))
+       (r '()    (cons x r)))
+      ((eof-object? x) (reverse r))))
+```
+
+The main program reads all numbers and adds them up.
+
+``` {.scheme file=problem1.scm}
+(import (rnrs (6)))
+
+<<read-numbers>>
+
+(display (apply + (read-numbers)))
+```
